@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APIPulse — Lightweight REST API Testing Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="pulse-icon">⚡</span>
+      <h1>APIPulse</h1>
+    </div>
+    <span class="badge">Developer Studio</span>
+  </header>
+
+  <main class="app-container">
+    <!-- Sidebar: Request History -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Request History</h2>
+        <button id="clearHistoryBtn" class="btn-text">Clear</button>
+      </div>
+      <ul id="historyList" class="history-list">
+        <!-- History items populated dynamically -->
+      </ul>
+    </aside>
+
+    <!-- Main Workspace -->
+    <section class="workspace">
+      <!-- Request Bar -->
+      <form id="apiForm" class="request-bar">
+        <select id="httpMethod" class="method-select">
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="DELETE">DELETE</option>
+          <option value="PATCH">PATCH</option>
+        </select>
+
+        <input type="url" id="apiUrl" placeholder="https://jsonplaceholder.typicode.com/todos/1" required>
+
+        <button type="submit" id="sendBtn" class="btn-send">Send Request</button>
+      </form>
+
+      <!-- Request Details Input Tabs -->
+      <div class="panel">
+        <div class="tab-header">
+          <button type="button" class="tab-btn active" data-tab="headersTab">Headers (JSON)</button>
+          <button type="button" class="tab-btn" data-tab="bodyTab">Request Body (JSON)</button>
+        </div>
+
+        <div id="headersTab" class="tab-content active">
+          <textarea id="requestHeaders" placeholder='{
+  "Content-Type": "application/json"
+}'></textarea>
+        </div>
+
+        <div id="bodyTab" class="tab-content">
+          <textarea id="requestBody" placeholder='{
+  "title": "New Task",
+  "completed": false
+}'></textarea>
+        </div>
+      </div>
+
+      <!-- Response Panel -->
+      <div class="panel response-panel">
+        <div class="response-header">
+          <h2>Response</h2>
+          <div class="response-meta">
+            <span id="statusBadge" class="status-badge">Status: --</span>
+            <span id="timeBadge" class="meta-badge">Time: -- ms</span>
+          </div>
+        </div>
+
+        <div class="response-body-wrapper">
+          <pre id="responseOutput"><code>Click "Send Request" to see the output response here...</code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
