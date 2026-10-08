@@ -23,4 +23,4 @@ APIPulse is a fast, in-browser REST API testing studio built with pure HTML5, CS
 ## 🚀 How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/atoyebiadebarebayo-oss/APIPulse.git](https://github.com/atoyebiadebarebayo-oss/APIPulse.git)
+   git clone [https://github.com/atoyebiadebarebayo-oss/APIPulse.git](https://aplpulse.vercel.app/)
