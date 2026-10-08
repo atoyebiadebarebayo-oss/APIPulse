@@ -5,7 +5,7 @@ APIPulse is a fast, in-browser REST API testing studio built with pure HTML5, CS
 ---
 
 ## ✨ Key Features
-* 🚀 **Full HTTP Method Support**: Test `GET`, `POST`, `PUT`, `DELETE`, and `PATCH` endpoints.
+* 🚀 **Full HTTP Method Support**: Test GET, POST, PUT, DELETE, and PATCH endpoints.
 * ⏱ **Real-Time Latency & Status Tracking**: Display response status codes and round-trip timing in milliseconds.
 * 📜 **Request History Persistence**: Saves recent endpoints locally in browser LocalStorage for one-click re-testing.
 * 🎨 **JSON Header & Body Editors**: Tabbed input panels with clean placeholder structures for rapid payload setup.
@@ -21,6 +21,18 @@ APIPulse is a fast, in-browser REST API testing studio built with pure HTML5, CS
 ---
 
 ## 🚀 How to Run Locally
+
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/atoyebiadebarebayo-oss/APIPulse.git](https://aplpulse.vercel.app/)
+
+git clone [https://github.com/atoyebiadebarebayo-oss/APIPulse.git](https://github.com/atoyebiadebarebayo-oss/APIPulse.git)
+
+2. Navigate into the folder:
+
+cd APIPulse
+
+3. Open `index.html` with VS Code Live Server.
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE)
